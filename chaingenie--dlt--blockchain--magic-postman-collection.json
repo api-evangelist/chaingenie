@@ -1,0 +1,1341 @@
+{
+    "id": "f15ff0dffa0f73c3bf5003f201c42ce7",
+    "name": "ChainGenie = DLT + Blockchain + Magic",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "2e13b6c919529bc19041f7f18b280102",
+            "name": "Deposit into bank account",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethbank\/deposit",
+            "description": "Deposit crypto currency into the bank.  In sandbox mode, the account used is the demo account on the blockchain server. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "value",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1708f07b837147c968d31e497baf7dfa",
+            "name": "Withdraw from bank account",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethbank\/withdraw",
+            "description": "Withdraw crypto currency into the bank.  In sandbox mode, the account used is the demo account on the blockchain server. Of course, you can only withdraw if there is money in the account!",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "value",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "3619ddf81fc3435837e3ef9dfbd76705",
+            "name": "Bank passbook (user)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethbank\/passbook",
+            "description": "Displays all transactions made by the user ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "aad3721afac3d8e11568f69fd2441351",
+            "name": "Bank balance (user)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethbank\/balance",
+            "description": "Displays user bank balance information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "fbd9cb519f5ecc14b9a41e41badb0b6e",
+            "name": "Generate, Sign & Route Document (Advanced)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/invokecontract",
+            "description": "This API is the generic version of the \"Generate document from template\" API. Any template file can be uploaded (sample available as link for testing).  If you just want to see how this would work - use the other call and just run it without any uploaded certificate. \nUpload a templated pdf with editable \/ filable fields and generate a document with automated sign and routing to a recipient.  Every attribute that needs to be filled will need to be passed in the format - ex. course field to be su",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "attribs",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "file",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "ab3fd77373f3f8a53acaf420f7a6b1a0",
+            "name": "Generate and Manage Document (Basic)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/docert",
+            "description": "This is an over simplified version for testing this API for its powers a template - uses an inbuilt into ChainGenie template and values are preconfigured - just running this will work and provide you an IPFS handle to retrieve the document you generated with your variables \/ values from the template.\nUse an existing document on our server and generate a document with automated sign and routing to a recipient.  Ex. this configured api will generate a certificate for a student name (name) with the",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "students",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "course",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "db8d520d56ff9bbbe36daf2566ddd148",
+            "name": "Send document",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/sendforsign",
+            "description": "Route the document for signature.  The document history and status is updated for querying. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "recipient",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "files",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "95ec2b276597c5044894d31876245687",
+            "name": "Sign document",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/sign",
+            "description": "Cryptographically sign the document and add the record to blockchain.  The document history and status is updated for querying. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "files",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "511bfc03aa73e25cf5d11dcb8b5724d8",
+            "name": "Get document status with file",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/docstatus",
+            "description": "Review the document status - existence, hash, block info, signatories, routing to users and details",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "files",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "2744f0bf268fd6c25543d6f8c73370b4",
+            "name": "Check document exists on blockchain",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/existsdoc",
+            "description": "Check if your documents exists in the eth blockchain",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "files",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "82cba452c9b9facb5b7759da963a5be5",
+            "name": "Post document to IPFS + blockchain",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/postdoc",
+            "description": "Post document hash into eth chain for POE (proof of existence) and post the document into ipfs for safekeep!",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "files",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filetypes",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "b13c61f158c55a1cdd73c7e08df59618",
+            "name": "Send document using hash (min fn; no return)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/sendcert",
+            "description": "Route the document to a recipient.  The document history and status is updated for querying.  The API call does not return any document properties.  This is a <b>minimalistic function<\/b> for stringing with other functions",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "recipient",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "strHash",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "28718d210c164492feeee4f02fa48b8d",
+            "name": "Sign document using hash (min fn; no return)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/signcert",
+            "description": "Cryptographically sign the document and add the record to blockchain.  The document history and status is updated for querying.  The API call does not return any document properties.  This is a <b>minimalistic function<\/b> for stringing with other functions",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "strHash",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "2dc2dd2ff387ee76a8e18beddcd760de",
+            "name": "Get document status using hash",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/getdocstate",
+            "description": "Review the document status - existence, hash, block info, signatories, routing to users and details",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "strHash",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "8b10ef830e780b7f421150bbe29230b1",
+            "name": "Write hash to blockchain",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/posthash",
+            "description": "Post string hash into eth chain for POE (proof of existence) ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "hash",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "dd8d5af7635220570a269fce11c83c20",
+            "name": "Check hash exists on blockchain",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/existshash",
+            "description": "Check if your hash exists in the eth blockchain",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "hash",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "87fd485f7a78bff2ed6ecd26a69f02cc",
+            "name": "Write message to blockchain",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/poststr",
+            "description": "Post string hash into eth chain for POE (proof of existence) ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "str",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "899f25623c1aed0664a1b4713910c8e8",
+            "name": "Check message exists on blockchain",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/existsstr",
+            "description": "Check if your string exists in the eth blockchain",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "str",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "494f4558c69456f753863e256d304b57",
+            "name": "Document transactions",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/gettrans",
+            "description": "Displays all transactions connected to this project \/ smart contract",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "92f5d00fb76035677468bd46936f2235",
+            "name": "List product for sale",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/CreateTradeContract",
+            "description": "List product on marketplace: <br\/>\r\n- Seller initiates sale - CreateTradeContract<br\/>\r\n- Escrow from seller added for value of contract<br\/>\r\n- End transaction state = Smart Contract Created<br\/>",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemPartNum",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemValue",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemSellerName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemValidUntil",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "c00da9c141468bd62e01733bf4f393d9",
+            "name": "Remove Listing (by Seller)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/ConfirmAbort",
+            "description": "Remove Listing (by Seller)<br\/>\r\n- Seller cancels the market trade after listing but before bid\/buy<br\/>\r\n- Escrow from seller is returned back to the seller<br\/>\r\n- End transaction state = Smart contract is rendered inactive<br\/>",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemContractId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemSellerName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1b9f896a9408042c70a6eccfc757ee85",
+            "name": "Bid \/ buy listed item (by Buyer)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/ConfirmPurchase",
+            "description": "Bid \/ buy the item listed on the marketplace: <br\/>\r\n- Buyer confirms interest in buying<br\/>\r\n- Escrow from buyer added to value of contract<br\/>\r\n- Invoice document is created with all details using invoice template<br\/>\r\n- Invoice is added IPFS and invoice hash into blockchain<br\/>\r\n- End transaction state = Trade is actively locked between the seller and buyer<br\/>",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemContractId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemBuyerName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "973ce1b43dcbed69bc384331d9b69588",
+            "name": "Refund buyer and stop trade (by Seller)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/ConfirmRefund",
+            "description": "Seller can cancel the market trade after bid\/buy by refunding the seller<br\/>\r\nEscrow from buyer is returned back to the buyer<br\/>\r\nEscrow from seller is returned back to the seller (optional: penalties can be imposed)<br\/>\r\nEnd transaction state = Escrow returned, smart contract cancelled and become inactive<br\/>",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemContractId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemSellerName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "699bf8495732de2576af6351d10c64af",
+            "name": "Delivery of item confirmed (by Buyer)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/ConfirmReceived",
+            "description": "Delivery of item confirmed by the buyer \r\n-Escrow is fully sent to seller\r\n- End transaction state = TRANSACTION COMPLETE",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemContractId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "itemBuyerName",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "ffe15bc9ad513c1af723be885e8e820e",
+            "name": "Get contract details & state",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/GetStateOfContract",
+            "description": "Get contract details & state\n- Provide full information including\n - Escrow amount in contract\n - Contract state \n - Buyer & Seller information\n - Links to contract \/ invoice documents\n - and other contract \/ sale specific information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemContractId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f9b99643ade57f806b6292add1140b0",
+            "name": "Get contract escrow details",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/GetFundsLockedInContract",
+            "description": "Get contract escrow details -\n- Retrieves full information including but not limited to\n - Escrow amount in contract\n - Contract state \n - Buyer & Seller information\n - Links to contract \/ invoice documents\n - and other contract \/ sale specific information",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemContractId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "85009cd2408adecff3740fb4bfc1ab0b",
+            "name": "Get seller information",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/WhoIsSeller",
+            "description": "Get full information about the seller by providing the contract id.  Response will also include some contract details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemContractId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "04c06bc62b18937f5063d1af3619748c",
+            "name": "Get buyer information",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/WhoIsBuyer",
+            "description": "Get full information about the seller by providing the contract id.  Response will also include some contract details.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "itemContractId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "f111a7ab7ddddcee269491d8c7179246",
+            "name": "Report \/ list of marketplace transactions",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/tradechain\/GetItemsFilterSort",
+            "description": "Use a combination of fields to get any type of report.  Ex. send specific seller name or id to get active for sale items by seller; send specific filehash to get status of a particular item\/invoice; send itemPartNum to get a list of all products of that partnumber and send sort order as itemValue ascending to cheapest top list) . . . \r\n-\tfilterField (accepted items below, default \u2013 none)\r\no\titemSellerId\r\no\titemSellerName\r\no\titemBuyerId\r\no\titemBuyerName\r\no\titemId\r\no\titemName\r\no\titemPartNum\r\no\tf",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "filterValue",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filterField",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "onSaleOnly",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortField",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sortOrder",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxPrice",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "97239e9be7ae4a0a86308d4352d0c3c1",
+            "name": "Get user's account balance (*)",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/basicfns\/GetAccountBalance",
+            "description": "Get information about an user's account balance.  The call is restricted to the unlocked user's account \/ query only. <br\/>* In this sandbox, you can query any user's account balance for testing purposes.  All accounts are test accounts and no actual value or account is exposed in the sandbox.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "accountId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "11eb9d67d548a127c609528b62e25beb",
+            "name": "Write document to IPFS",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/ipfsadd",
+            "description": "Post the document into ipfs for safekeep!",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "files",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        },
+        {
+            "id": "1c59d505958adcaf831fe7a0f6f2df48",
+            "name": "Retrieve document from IPFS",
+            "url": "httpsapi.chaingenie.com\/api\/v1\/ethledger\/ipfsget",
+            "description": "Retrieve the document stream from IPFS node",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "hash",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ApiKey",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f15ff0dffa0f73c3bf5003f201c42ce7",
+            "rawModeData": ""
+        }
+    ]
+}

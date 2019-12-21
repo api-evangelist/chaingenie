@@ -6,8 +6,8 @@
         "blockchain",
         "have api"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/chaingenie\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -21,17 +21,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/chaingenie--dlt--blockchain--magic-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/chaingenie--dlt--blockchain--magic.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/chaingenie--dlt--blockchain--magic.json"
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/chaingenie\/master\/chaingenie--dlt--blockchain--magic-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Github",
             "url": "https:\/\/github.com\/ChainGenie"
